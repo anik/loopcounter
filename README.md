@@ -7,7 +7,7 @@ loopcounter has a dependency in JQuery. So you need to first add the JQuery in y
 
 Add this code in HTML file. Here is a date format please follow this date format(yyyy-mm-dd hh:mm:ss)
 ```
-<div class="counter-class" data-date="2018-06-08 10:20:30"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
+<div class="first-counter" data-date="2018-06-08 10:20:30"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
 	<div><span class="counter-days"></span> Days</div>
 	<div><span class="counter-hours"></span> Hours</div>
 	<div><span class="counter-minutes"></span> Minutes</div>
@@ -20,8 +20,8 @@ Include this in footer of the HTML file-
 <script src="./js/loopcounter.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		loopcounter('counter-class');
-		//loopcounter('counter-class');
+		loopcounter('first-counter');
+		//loopcounter('second-counter');
 	});
 </script>
 ```
