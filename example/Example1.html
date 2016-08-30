@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example 1</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: url(./img/bg1.jpg);
+	    background-position: center top;
+	    background-attachment: fixed;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.wrapped{
+		text-align: center;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+	.wrapped h1{
+		color: #444;
+		font-size: 70px;
+		font-weight: 700;
+		padding: 0px 0 0px 15px;
+		margin: 0 0 30px 0;
+		text-transform: uppercase;
+	}
+	.middle {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+	.inner {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.counter-class > div{
+		display: inline-block;
+	}
+	.counter-class .counter-days,
+	.counter-class .counter-hours,
+	.counter-class .counter-minutes,
+	.counter-class .counter-seconds{
+		font-weight: 100;
+		font-size: 50px;
+	}
+	</style>
+</head>
+<body>
+
+<div class="wrapped">
+<div class="middle">
+<div class="inner">
+<h1>Date <br>Counter 1</h1>
+<div class="counter-class" data-date="2018-06-08 10:20:30"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
+	<div><span class="counter-days"></span> Days</div>
+	<div><span class="counter-hours"></span> Hours</div>
+	<div><span class="counter-minutes"></span> Minutes</div>
+	<div><span class="counter-seconds"></span> Seconds</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="./js/loopcounter.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		loopcounter('counter-class');
+	});
+</script>
+</html>

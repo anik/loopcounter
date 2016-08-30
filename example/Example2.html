@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example 2</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.wrapped{
+		text-align: center;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: #252525;
+	}
+	.wrapped h1{
+		color: #fff;
+		font-size: 70px;
+		font-weight: 700;
+		padding: 0px 0 0px 15px;
+		margin: 0 0 30px 0;
+		text-transform: uppercase;
+	}
+	.middle {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+	.inner {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.counter-class > div{
+		display: inline-block;
+    	margin: 0px 36px;
+    	color: #ffffff;
+    	padding-bottom: 16px;
+	}
+	.counter-class .counter-days,
+	.counter-class .counter-hours,
+	.counter-class .counter-minutes,
+	.counter-class .counter-seconds{
+		font-weight: 100;
+		font-size: 50px;
+		width: 100%;
+		display: block;
+	}
+	.counter-class > div:nth-child(1){ border-bottom: 2px solid #ff4444; }
+	.counter-class > div:nth-child(2){ border-bottom: 2px solid #33b5e5; }
+	.counter-class > div:nth-child(3){ border-bottom: 2px solid #99cc00; }
+	.counter-class > div:nth-child(4){ border-bottom: 2px solid #ffbb33; }
+	.counter-class .counter-days{ color: #ff4444; }
+	.counter-class .counter-hours{ color: #33b5e5; }
+	.counter-class .counter-minutes{ color: #99cc00; }
+	.counter-class .counter-seconds{ color: #ffbb33; }
+	</style>
+</head>
+<body>
+
+<div class="wrapped">
+<div class="middle">
+<div class="inner">
+<h1>Date <br>Counter 2</h1>
+<div class="counter-class" data-date="2018-06-08 10:20:30"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
+	<div><span class="counter-days"></span> Days</div>
+	<div><span class="counter-hours"></span> Hours</div>
+	<div><span class="counter-minutes"></span> Minutes</div>
+	<div><span class="counter-seconds"></span> Seconds</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="./js/loopcounter.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		loopcounter('counter-class');
+	});
+</script>
+</html>
