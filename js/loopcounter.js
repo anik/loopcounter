@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
 	window.loopcounter = function( idWarp ) {
 		if(typeof idWarp!= 'undefined'){
 			var date = $('.'+idWarp).data('date');
