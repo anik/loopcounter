@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 
 			
 			
-			var start = new Date( date ),
+			var start = new Date( date.replace(/-/g, "/") ),
 			    end   = new Date(),
 			    diff  = new Date( start - end ),
 			    time  = diff/1000/60/60/24;
